@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-5f0dced8b65558ec36e",applicationID:"231029016"};;/*! For license information please see nr-loader-rum-1.238.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={763:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>j,lF:()=>T,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>E});var r=n(632),i=n(567);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var d=n(56);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(385),A=n(818);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4,denyList:void 0},D={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function E(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.238.0",i="PROD",o="CDN"},385:(e,t,n)=>{n.d(t,{IF:()=>c,Nk:()=>u,Tt:()=>a,_A:()=>o,il:()=>r,pL:()=>s,v6:()=>i,w1:()=>d});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=(o?.location,/iPad|iPhone|iPod/.test(navigator.userAgent)),s=a&&"undefined"==typeof SharedWorker,c=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),d=Boolean(r&&window.document.documentMode),u=!!navigator.sendBeacon},711:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},0:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(148),i=n(284),o=n(322),a=n(325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},148:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>d});var r=n(632),i=n(210),o=n(763);class a{constructor(e){this.contextId=e}}var s=n(117);const c="nr@context:".concat(s.a),d=function e(t,n){var r={},s={},u={},f=!1;try{f=16===n.length&&(0,o.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,o){!1!==o&&(o=!0);if(d.aborted&&!i)return;t&&o&&t.emit(e,n,r);for(var a=p(r),c=v(e),u=c.length,l=0;l<u;l++)c[l].apply(a,n);var f=b()[s[e]];f&&f.push([g,e,n,a]);return a},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return u[t]=u[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),u=(0,r.fP)();function l(){d.aborted=!0,d.backlog={}}u.ee||(u.ee=d)},546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(148).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},322:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(546);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(402).Rl)()},402:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},56:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(148),i=n(546),o=n(0),a=n(325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,r]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},351:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(148);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},960:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var r=n(894),i=n(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},81:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(325).D.pageViewTiming},938:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(763),i=n(148);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(325),i=n(763),o=n(546),a=n(148),s=n(894),c=n(0),d=n(960),u=n(385),l=n(50),f=n(81),g=n(632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y);const j=(0,i.P_)(e);A.denyList=[...j.ajax?.deny_list||[],...j.ajax?.block_internal?[y.beacon,y.errorBeacon]:[]],(0,i.sU)(e,A),p();const E=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(75).then(n.bind(n,438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,E,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),E}},325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum.3709cb75-1.238.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.238.0.PROD:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,d=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=self["webpackChunk:NRBA-1.238.0.PROD"]=self["webpackChunk:NRBA-1.238.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(325),r=i(763);const o=Object.values(n.D);function a(e){const t={};return o.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(144);var c=i(546),d=i(385),u=i(0),l=i(938),f=i(960);class g extends l.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=r,this.abortHandler,this.featAggregate,this.onAggregateImported,r&&(0,u.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const n=d.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,u.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),o(!1)}};d.il?(0,f.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var p=i(633),h=i(894);class v extends g{static featureName=p.t9;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||d.Tt)&&"undefined"!=typeof PerformanceTiming){const t=(0,r.OP)(e);t[p.Dz]=Math.max(Date.now()-t.offset,0),(0,f.K)((()=>t[p.qw]=Math.max((0,h.z)()-t[p.Dz],0))),(0,f.b)((()=>{const e=(0,h.z)();t[p.OJ]=Math.max(e-t[p.Dz],0),(0,c.p)("timing",["load",e],void 0,n.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(711),b=i(284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=w(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var j=i(632),E=i(402),T=i(351);var _=i(956),k=i(239),P=i(251);class C extends g{static featureName=P.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,n),d.il&&((0,r.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,_.N)((()=>(0,c.p)("docHidden",[(0,h.z)()],void 0,P.t,this.ee)),!0),(0,k.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,h.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var I=i(81);class N extends g{static featureName=I.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),d._A?(this.agentIdentifier=n,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}start(){const t="features";try{const r=a(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,T.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,j.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,j.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[v,C,N],loaderType:"lite"})})()})();</script>
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <style>html{visibility: hidden;opacity:0;background-color:#000000;transition:background-color 0.2s,opacity 0.2s;}</style>
+
+  <!-- Google Tag Manager -->
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PQ55T4L');</script>  -->
+  <!-- End Google Tag Manager -->
+
+  <!-- Klaviyo -->
+  <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+  <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UbWYQp"></script>
+  
+  <meta name='robots' content='noindex, follow' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v17.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page not found - Vote Save America</title>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:title" content="Page not found - Vote Save America" />
+	<meta property="og:site_name" content="Vote Save America" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://votesaveamerica.com/#website","url":"https://votesaveamerica.com/","name":"Vote Save America","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://votesaveamerica.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//votesaveamerica.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='cmplz-general-css'  href='https://votesaveamerica.com/wp-content/plugins/complianz-gdpr-premium/assets/css/cookieblocker.min.css?ver=6.3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css-css'  href='https://votesaveamerica.com/wp-content/themes/vsa/compiled/main.css?ver=1693066261' type='text/css' media='' />
+<script type='text/javascript' src='https://votesaveamerica.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://votesaveamerica.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://votesaveamerica.com/wp-json/" /><style>.cmplz-hidden{display:none!important;}</style> 
+  <script
+    src="https://app.votesaveamerica.civicengine.com/embed.js"
+    async
+    defer
+  ></script>
+  <link
+    rel="stylesheet"
+    media="screen"
+    href="https://app.votesaveamerica.civicengine.com/embed.css"
+  /> <link rel="icon" href="https://res.cloudinary.com/crooked-media/images/w_32,h_32,c_scale/f_auto,q_auto/v1642465073/cropped-favicon/cropped-favicon-32x32.png?_i=AA" sizes="32x32" />
+<link rel="icon" href="https://res.cloudinary.com/crooked-media/images/w_192,h_192,c_scale/f_auto,q_auto/v1642465073/cropped-favicon/cropped-favicon-192x192.png?_i=AA" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://res.cloudinary.com/crooked-media/images/w_180,h_180,c_scale/f_auto,q_auto/v1642465073/cropped-favicon/cropped-favicon-180x180.png?_i=AA" />
+<meta name="msapplication-TileImage" content="https://res.cloudinary.com/crooked-media/images/w_270,h_270,c_scale/f_auto,q_auto/v1642465073/cropped-favicon/cropped-favicon-270x270.png?_i=AA" />
+</head>
+
+<body data-cmplz=2 class="page page--error404">
+  <!-- Google Tag Manager (noscript) -->
+  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQ55T4L"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+  <!-- End Google Tag Manager (noscript) -->
+
+  <a class="visually-hidden skip-link" href="#MainContent">skip to main content</a>
+
+      <nav class="nav" id="nav" role="navigation">
+  <div class="nav__bar">
+    <div class="nav__bar-inner">
+      
+      <a href="https://votesaveamerica.com" class="nav__logo-wrap">
+        <div class="nav__logo nav__logo--a">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.7419 75.0949"><path d="M102.2166,59.9072V58.2266a3.5935,3.5935,0,0,0-1.0221-2.6914L98.0282,52.369c-.9663-.9885-2.6572-1.488-5.084-1.488-3.7518,0-5.2708,1.3031-5.2708,2.91a1.74,1.74,0,0,0,.5094,1.3128l1.3333,1.3337a6.6627,6.6627,0,0,0-.6918.2345,2.7382,2.7382,0,0,0-.7477-1.2964L84.91,52.21a5.7773,5.7773,0,0,0-4.1816-1.3286c-2.2313,0-4.4521.67-5.6792,2.3538l-.3166-.3113a2.22,2.22,0,0,0,1.7538-2.0812,2,2,0,0,0-.6417-1.4788l-3.1662-3.1663a3.1567,3.1567,0,0,0-2.2653-.8325,3.667,3.667,0,0,0-1.1506.1777,3.8589,3.8589,0,0,0-1.09-2.0933l-.3959-.3959,2.7264-2.7265a9.041,9.041,0,0,0,1.1856.0831c2.9873,0,4.8056-1.3525,5.4982-3.4316l-1.6715-1.6638L75.85,34.98h1.25v-.5854a4.87,4.87,0,0,0-.0541-.6107L98.3981,12.4318,86.648.6816,61.1912,26.1384,58.8,23.7467H54.1671v3.1895H52.5219V27.4l1.6452,1.6359v1.827L51.82,28.5163a7.0284,7.0284,0,0,0-4.9221-1.8426,8.222,8.222,0,0,0-1.9989.25,2.1809,2.1809,0,0,1,1.3225-.4621h.3465v-.4037l-3.219-3.2191H37.6739v.4038l2.0419,2.0053a2.4332,2.4332,0,0,1-.0709.4372L38.51,30.271l-1.1042-3.81H39.16v-.4037l-3.2191-3.2191h-8.49v.4038L29.5446,25.3l3.002,9.6166-2.6231-2.6385h-.4307a1.3929,1.3929,0,0,1-1.4194.8267c-1.2165,0-2.4077-.85-4.5619-.85a7.22,7.22,0,0,0-4.5032,1.3986L13.2321,27.877l-11.75,11.75L7.9949,46.14,4.2586,58.843c-.4056,1.4612-1.2975,2.5445-2.73,2.5445H.6634v.5291l3.2191,3.219h6.8928v-.529L8.3381,62.1791l.0044-.0163.73-2.4941h3.1833l.5175,1.7188h-1.811v.5291l3.2191,3.219h8.6026v.019h4.2256l9.3331,9.333L46.795,64.0351a7.7782,7.7782,0,0,0,4.63,1.38,6.1615,6.1615,0,0,0,4.7542-1.791l1.4837,1.53h8.125V64.72L63.9,62.8732v-4.56A5.3278,5.3278,0,0,1,64.08,56.892l1.6581,1.6573a2.2191,2.2191,0,0,0,1.638.6111,2.83,2.83,0,0,0,.69-.0819v2.4227H66.7539v.4343l3.219,3.2191h7.55V64.72l-1.3119-1.2666V61.0754l2.486,2.4861a7.332,7.332,0,0,0,5.2513,1.8537c2.7541,0,4.2466-1.1746,5.01-2.8719L90.91,64.4948a4.05,4.05,0,0,0,2.9519.92c2.0188,0,3-.6165,3.4526-1.4683l.6273.6268a3.611,3.611,0,0,0,2.71.8415c2.9,0,3.3605-1.4551,3.3605-3.7138ZM10.171,55.845l.4691-1.6123.4842,1.6123Zm57.4005-8.6463.01-.0289-.063-.024.01-.0288-.0629-.024.01-.0287-.0629-.0241.0078-.0221h.2732a2.0049,2.0049,0,0,0-.0571.2381l-.0128-.0049.01-.0287ZM41.9357,35.3356l3.2357,3.2362a5.0155,5.0155,0,0,0,.4467.402h-3.337v.4038l1.8481,1.847L44.66,42.67l-.1389.1388-2.7072-2.7072a3.5875,3.5875,0,0,0-.9243-.6679Zm-3.8734,7.271V42.94l-.2769-.2778Q37.9219,42.63,38.0623,42.6066Zm-4.9261-5.8009.076.2437L35.05,38.8671a5.0878,5.0878,0,0,0-1.9276.6988Zm-6.33-.8359a4.9478,4.9478,0,0,1,2.0691.4419c.1991.3415.3787.6839.5411,1.016l2.936,2.9167a2.0552,2.0552,0,0,0-.2907,1.0723,1.609,1.609,0,0,0,.4743,1.2157l1.2475,1.248q-.1436.0405-.2773.0838a4.6248,4.6248,0,0,0-.5257-.6273l-3.1662-3.1663a10.5121,10.5121,0,0,0-4.3263-2.2941c-.494-.162-.9447-.3139-1.3546-.46C24.3834,36.4719,25.3534,35.97,26.8065,35.97ZM50.0635,61.1c-.0137-.095-.0211-.2019-.0324-.3013l1.2259-1.2259h1.5988A3.8548,3.8548,0,0,1,50.0635,61.1Zm5.6921-.8692-.6529-.658h.6529ZM55.7222,55.52c-.0173-.0179-.0352-.0352-.0528-.0528s-.0351-.0351-.0528-.0527-.0352-.0352-.0529-.0529c-.0155-.016-.0315-.0316-.0473-.0474l.2392-.2393v.4774C55.7448,55.5408,55.7331,55.53,55.7222,55.52ZM62.638,48.192l1.1739-1.1739h1.08A3.621,3.621,0,0,1,62.638,48.192Zm5.4278,5.7093-.022-.0213c-.0173-.0181-.035-.0355-.0528-.0528s-.035-.0355-.0528-.0528-.0349-.0354-.0527-.0528-.0351-.0354-.0528-.0527-.0351-.0354-.0528-.0528-.0351-.0354-.0528-.0528-.0349-.0354-.0528-.0527-.0349-.0355-.0528-.0528-.0349-.0355-.0527-.0528-.035-.0355-.0527-.0527-.035-.0355-.0528-.0528-.035-.0355-.0528-.0528-.0349-.0355-.0528-.0528-.035-.0354-.0528-.0527-.035-.0355-.0528-.0528-.035-.0354-.0527-.0528-.035-.0354-.0528-.0527-.035-.0355-.0528-.0528-.0349-.0355-.0527-.0528-.035-.0355-.0527-.0527-.0351-.0355-.0528-.0528-.035-.0355-.0528-.0528-.0349-.0355-.0528-.0528-.035-.0354-.0528-.0527-.035-.0355-.0528-.0528-.035-.0354-.0528-.0528-.0349-.0354-.0527-.0528-.035-.0354-.0528-.0528-.035-.0354-.0527-.0527-.035-.0355-.0528-.0528-.035-.0354-.0527-.0527-.035-.0355-.0528-.0528-.035-.0355-.0528-.0528l-.0287-.0295a5.5637,5.5637,0,0,0,.7442-.3l1.048,1.0553Zm-.0594-2.7379a4.5658,4.5658,0,0,0,1.0381-1.2706c.0135.0135.0267.0272.0407.0405.0173.0177.0346.0355.0527.0528s.0347.0355.0528.0527.0347.0355.0528.0528.0346.0355.0527.0527.0347.0356.0528.0528.0347.0355.0527.0527.0347.0356.0528.0529.0346.0355.0528.0528.0347.0356.0527.0527.0348.0355.0529.0528.0346.0355.0527.0528.0347.0355.0528.0527.0347.0356.0527.0528.0347.0355.0528.0528.0347.0355.0528.0527.0347.0355.0527.0528.0347.0355.0528.0528.0347.0355.0528.0528.0347.0356.0527.0527.0348.0355.0529.0528.0346.0355.0527.0528.0347.0355.0528.0528.0347.0355.0527.0527l.0162.0164Zm14.6445,9.8453a10.8617,10.8617,0,0,1-.1072-1.5877,6.729,6.729,0,0,1,.435-2.6167c.0146.0152.03.03.0448.0446.017.0179.0347.0354.0527.0527s.0348.0355.0528.0527.0349.0356.0528.0528.0348.0355.0528.0528.0348.0354.0528.0528.0348.0354.0527.0527.0348.0355.0528.0529.0348.0354.0528.0527.0348.0355.0527.0528.0348.0355.0528.0527.0348.0356.0528.0528.0347.0355.0527.0528.0349.0355.0528.0528.0348.0354.0528.0527.0348.0354.0528.0528.0348.0354.0527.0527.0348.0355.0528.0529.0348.0354.0528.0527.0348.0355.0527.0528.0348.0355.0528.0527.0348.0356.0528.0528.0348.0355.0527.0528.0349.0355.0528.0528.0348.0355.0529.0528.0347.0354.0527.0527.0348.0355.0527.0527.0348.0355.0529.0529.0347.0354.0526.0527.0348.0355.0528.0528.0348.0355.0528.0527.0348.0356.0528.0528.0348.0355.0527.0528.0349.0355.0528.0528.0349.0355.0529.0528.0347.0354.0526.0526.0349.0356.0528.0528.0348.0356.0528.0529.0348.0354.0528.0527.0348.0355.0528.0528.0347.0355.0528.0528.0347.0355.0527.0527c.011.0116.0226.0226.0339.034A3.2766,3.2766,0,0,1,82.6509,61.0087Zm11.3981-5.612q-.025-.0263-.0515-.0514c-.0171-.018-.0347-.0355-.0528-.0528s-.0347-.0355-.0528-.0527-.0347-.0356-.0527-.0527-.0348-.0356-.0529-.0529-.0346-.0355-.0527-.0528-.0347-.0356-.0528-.0528-.0347-.0354-.0527-.0527-.0347-.0355-.0528-.0527L93.543,54.89a4.8129,4.8129,0,0,1,.506-.0932Z" fill-rule="evenodd"/><path d="M33.2122,37.0494h4.2451L40.338,25.7653c.2815-1.0295,1.2128-2.5233,2.664-2.5233h.3465v-.4037H37.6739v.4037h.5848c1.2779,0,1.6461,1.4534,1.3862,2.4426l-2.1876,8.8415-3.27-11.2841h1.7543v-.4037h-8.49v.4037h1.4512ZM22.8779,43.0023c3.7762,1.2519,4.9674,2.2912,4.9674,3.7321,0,1.2756-.9377,2.0551-2.7372,2.0551-2.56,0-4.9927-1.7244-7.071-5.6218H17.53l.1267,6.047h.4309a2.1413,2.1413,0,0,1,1.9515-.9684c1.2672,0,2.6358,1.0865,5.1195,1.0865,2.7626,0,5.9813-1.2755,5.9813-5.5038,0-3.4723-2.1543-4.795-5.6518-5.9525-3.2441-1.0629-4.6379-1.7007-4.6379-3.1652,0-1.2756,1.039-1.9606,2.7371-1.9606,3.0414,0,4.79,2.5511,5.8292,4.677h.4814l.0254-5.15h-.4308a1.3924,1.3924,0,0,1-1.4192.8268c-1.2166,0-2.4078-.85-4.562-.85-2.2557,0-6.0573.85-6.0573,5.0077,0,3,2.0275,4.6061,5.4237,5.74M6.0155,55.845l2.5138-8.6412,2.595,8.6412Zm34.4024-1.7713a2.8684,2.8684,0,0,0-3.1993-3.1926,4.6116,4.6116,0,0,0-4.235,2.2152c-.3223-1.4551-1.4041-2.2152-3.13-2.2152a4.5442,4.5442,0,0,0-4.0509,1.9763v-1.694H19.5648v.4126h1.312v9.8115H19.8281l-5.46-17.1565H8.5564L4.2586,58.843c-.4055,1.4612-1.2976,2.5445-2.73,2.5445H.6635v.529H7.5562v-.529H6.61c-1.2975,0-2-.655-1.4867-2.4437l.73-2.4941h5.4331l1.4867,4.9378h-1.811v.529h8.6027v.0191h6.951v-.4344h-.7135V53.8565a1.6233,1.6233,0,0,1,1.4271-1.0642c.5063,0,.8976.3257.8976,1.1728v7.5361h-.7135v.4344h6.33v-.4344h-.6676V54.03a1.6894,1.6894,0,0,1,1.5192-1.2162c.5294,0,.8746.304.8746,1.1945v7.4927h-.69v.4344H41.73v-.4344h-1.312Zm7.4886-2.6714c.8056,0,1.22.76,1.2429,4.3219H46.7327c.023-3.6052.3912-4.3219,1.1738-4.3219M49.794,61.11c-1.91,0-3.0153-1.39-3.0613-4.7563H53.96v-.63c0-3.3229-2.739-4.8431-6.0074-4.8431-3.2914,0-6.4907,1.694-6.4907,5.56,0,3.9093,3.2453,5.7552,6.7438,5.7552,3.1764,0,5.11-1.455,5.8463-3.692l-.5063-.1954A4.0133,4.0133,0,0,1,49.794,61.11M63.72,50.8811a3.1045,3.1045,0,0,0-3.0383,2.0632v-1.781H54.4437v.4127h1.312v9.9252h-1.312v.4344h8.1249v-.4344H60.6812V55.0944c0-2.5193,1.4271-3.7573,3.0613-3.7573a2.027,2.027,0,0,1,2.21,1.933,1.9379,1.9379,0,0,0-1.8414-1.0859,1.89,1.89,0,1,0,.0461,3.7571,2.2039,2.2039,0,0,0,2.3247-2.4323,2.4959,2.4959,0,0,0-2.762-2.6279m9.2719.2823H66.7539v.4344h1.312v9.9034h-1.312v.4344h7.5495v-.4344h-1.312Zm-2.5779-5.7987c-1.5881,0-2.8079.9121-2.8079,2.2586,0,1.3248,1.22,2.237,2.8079,2.237,1.6112,0,2.8542-.9122,2.8542-2.237,0-1.3465-1.243-2.2586-2.8542-2.2586M82.34,61.0234c-1.98,0-3.0152-1.7158-3.0152-4.8214,0-3.4314,1.5191-4.3654,3.0612-4.3654a2.5183,2.5183,0,0,1,2.44,1.4334,1.8549,1.8549,0,0,0-1.3349-.456,1.7532,1.7532,0,0,0-1.98,1.7591,1.7989,1.7989,0,0,0,2.0255,1.8027A1.9864,1.9864,0,0,0,85.7,54.2474c0-2.2587-2.0715-3.3663-4.9716-3.3663-3.3375,0-6.6519,1.4985-6.6519,5.6466,0,4.3653,3.6136,5.6684,6.6519,5.6684,3.2223,0,4.7184-1.6071,5.34-3.7789l-.4833-.1737c-.5754,1.4768-1.5191,2.78-3.2453,2.78M94.049,58.9819c0,1.26-.4143,1.846-1.1048,1.846-.6215,0-1.0358-.4778-1.0358-1.9112,0-1.9546.8056-2.3672,2.1406-2.5627Zm6.2835-.5c-.0461,1.8027-.3912,2.4542-.8517,2.4542-.2761,0-.4833-.2171-.4833-.695V55.0074c0-2.7364-2.0023-4.1263-6.0533-4.1263-3.7518,0-5.2708,1.3031-5.2708,2.91a1.775,1.775,0,0,0,2.0024,1.8243A1.86,1.86,0,0,0,91.77,53.8129c0-1.0641-.8056-1.6722-1.98-1.6722a3.7684,3.7684,0,0,0-.7134.0868,4.1756,4.1756,0,0,1,2.4627-.6949c1.289,0,2.5089.4126,2.5089,2.0632v2.2587c-5.3629.2606-7.0661,1.151-7.0661,3.4531,0,2.02,1.381,2.8886,3.66,2.8886,2.21,0,3.1763-.7385,3.5676-1.7157.3682,1.1293,1.358,1.7157,3.2223,1.7157,2.9,0,3.3605-1.4552,3.3605-3.7139Zm-62.27-12.24c0,1.1711-.39,1.7162-1.04,1.7162-.5849,0-.9749-.4442-.9749-1.7767,0-1.8171.7582-2.2007,2.0147-2.3823Zm-6.65.3029c0,1.8776,1.3,2.6852,3.4442,2.6852,2.0795,0,2.9893-.6865,3.3576-1.595.3466,1.05,1.278,1.595,3.0327,1.595,2.7294,0,3.1626-1.3527,3.1626-3.4524h-.4332c-.0433,1.6757-.3683,2.2814-.8015,2.2814-.26,0-.4549-.2019-.4549-.646V42.5473c0-2.5439-1.8846-3.836-5.6971-3.836-3.5309,0-4.9606,1.2114-4.9606,2.7054a1.6625,1.6625,0,0,0,1.8846,1.696,1.7429,1.7429,0,0,0,1.9712-1.6758c0-.9893-.7582-1.5546-1.863-1.5546a3.5848,3.5848,0,0,0-.6714.0807,3.9654,3.9654,0,0,1,2.3178-.646c1.213,0,2.3612.3836,2.3612,1.918v2.1c-5.0473.2423-6.65,1.07-6.65,3.21Zm19.5337,2.564,2.2961-7.9343A2.4861,2.4861,0,0,1,55.3,39.3776h.3033v-.4038H51.0976v.4038h.4548c.9531,0,1.1915,1.07,1.04,1.6958l-1.56,5.7541-2.4694-7.45H49.69v-.4038H42.2811v.4038h1.17l3.5742,9.7312Zm9.48-9.9129c.7581,0,1.148.7066,1.17,4.0177H59.3212c.0216-3.3515.3683-4.0177,1.1048-4.0177M60.7075,49.23c2.9893,0,4.809-1.3527,5.5022-3.4322l-.4766-.1817a3.772,3.772,0,0,1-3.5309,2.6044c-1.7979,0-2.8377-1.2921-2.881-4.4215H66.123v-.5854c0-3.089-2.5777-4.5023-5.6538-4.5023-3.0975,0-6.1086,1.5748-6.1086,5.1685,0,3.6341,3.0543,5.35,6.3469,5.35m-13.81-22.092c.9741,0,1.32,1.2314,1.32,4.8043s-.3463,4.8043-1.32,4.8043c-.9958,0-1.3637-1.2313-1.3637-4.8043s.3679-4.8043,1.3637-4.8043M40.62,31.9423c0,3.8152,3.5285,5.2484,6.2776,5.2484s6.2559-1.4332,6.2559-5.2484-3.5068-5.2686-6.2559-5.2686S40.62,28.1271,40.62,31.9423m13.5473,1.4938c0,3.0481,1.4719,3.7546,3.68,3.7546,2.7708,0,3.2037-1.0093,3.5068-3.6537l-.4546-.02c-.3247,2.22-.7143,2.7856-1.3638,2.7856-.5411,0-.7359-.323-.7359-1.5139V27.4h2.2729v-.4643H58.8V23.7467H54.1671v3.1894H52.5219V27.4h1.6452Zm14.0213-6.2779c.7577,0,1.1473.7065,1.1689,4.0171H67.0845c.0215-3.351.368-4.0171,1.1039-4.0171M68.47,37.1907c2.9872,0,4.8055-1.3525,5.4982-3.4316l-.4762-.1817a3.77,3.77,0,0,1-3.5284,2.604c-1.7968,0-2.8357-1.2919-2.879-4.4208h6.797v-.5853c0-3.0886-2.5759-4.5016-5.65-4.5016-3.0954,0-6.1043,1.5746-6.1043,5.1677,0,3.6335,3.0523,5.3493,6.3426,5.3493" fill="#fff"/></svg>        </div><!-- .nav__logo -->
+        <div class="nav__logo nav__logo--b">
+          <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 58 44" style="enable-background:new 0 0 58 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF5D33;}
+	.st1{fill:#EADAD2;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="21.4,42.7 1.1,23.3 8,16.1 21.4,28.8 50.1,0.8 57.1,7.9 		"/>
+	</g>
+	<path d="M16.8,14.3v0.5h0.7c1.5,0,1.9,1.8,1.6,3l-2.5,10.9l-3.8-13.9h2v-0.5H5v0.5h1.7l5,17h4.9l3.3-13.9c0.3-1.3,1.4-3.1,3.1-3.1
+		h0.4v-0.5L16.8,14.3z M31.2,32c2.7,0,5.9-1.3,5.9-5.8c0-3.7-2.1-5.1-5.6-6.3l-0.7-0.2c-2.7-1-3.9-1.7-3.9-3.1c0-1.3,1-2.1,2.7-2.1
+		c3,0,4.7,2.7,5.7,4.9h0.5l0-5.4h-0.4c-0.2,0.6-0.8,0.9-1.4,0.9c-1.2,0-2.4-0.9-4.5-0.9c-2.2,0-6,0.9-6,5.3c0,3.1,1.9,4.8,5.1,6
+		l0.2,0.1c3.7,1.3,4.9,2.4,4.9,3.9c0,1.3-0.9,2.2-2.7,2.2c-2.5,0-4.9-1.8-6.9-5.9h-0.5l0.1,6.4h0.4c0.4-0.7,1.1-1.1,1.9-1
+		C27.4,30.9,28.7,32,31.2,32z M54.5,31.2l-5-17h-5.4l-4,14.4c-0.4,1.4-1.2,2.5-2.5,2.5h-0.8v0.5h6.3v-0.5h-0.9
+		c-1.2,0-1.8-0.6-1.4-2.4l0.7-2.5h5l1.4,4.9h-1.7v0.5h9.8v-0.5L54.5,31.2z M41.8,25.7l2.3-8.5l2.4,8.5H41.8z"/>
+	<path class="st1" d="M15.8,13.3v0.5h0.7c1.5,0,1.9,1.8,1.6,3l-2.5,10.9l-3.8-13.9h2v-0.5H4v0.5h1.7l5,17h4.9l3.3-13.9
+		c0.3-1.3,1.4-3.1,3.1-3.1h0.4v-0.5L15.8,13.3z M30.2,31c2.7,0,5.9-1.3,5.9-5.8c0-3.7-2.1-5.1-5.6-6.3l-0.7-0.2
+		c-2.7-1-3.9-1.7-3.9-3.1c0-1.3,1-2.1,2.7-2.1c3,0,4.7,2.7,5.7,4.9h0.5l0-5.4h-0.4c-0.2,0.6-0.8,0.9-1.4,0.9c-1.2,0-2.4-0.9-4.5-0.9
+		c-2.2,0-6,0.9-6,5.3c0,3.1,1.9,4.8,5.1,6l0.2,0.1c3.7,1.3,4.9,2.4,4.9,3.9c0,1.3-0.9,2.2-2.7,2.2c-2.5,0-4.9-1.8-6.9-5.9h-0.5
+		l0.1,6.4h0.4c0.4-0.7,1.1-1.1,1.9-1C26.4,29.9,27.7,31,30.2,31z M53.5,30.2l-5-17h-5.4l-4,14.4c-0.4,1.4-1.2,2.5-2.5,2.5h-0.8v0.5
+		h6.3v-0.5h-0.9c-1.2,0-1.8-0.6-1.4-2.4l0.7-2.5h5l1.4,4.9h-1.7v0.5h9.8v-0.5L53.5,30.2z M40.8,24.7l2.3-8.5l2.4,8.5H40.8z"/>
+</g>
+</svg>
+        </div><!-- .nav__logo -->
+      </a><!-- .nav__logo-wrap -->
+
+      <div class="nav__burger" id="nav__burger" tabindex="0" role="button">
+        <div class="nav__burger-bar"></div><!-- .nav__burger-bar -->
+      </div><!-- .nav__burger -->
+
+      <ul class="nav__list nav__list--right"><li id="menu-item-5382" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5382"><a href="https://votesaveamerica.com/be-a-voter/" class="cc_sitewide_nav-bar_5382">Be A Voter</a></li>
+<li id="menu-item-7635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7635"><a href="https://votesaveamerica.com/donate/" class="cc_sitewide_nav-bar_donate-3">Donate</a></li>
+<li id="menu-item-6348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6348"><a href="https://votesaveamerica.com/save-america/" class="cc_sitewide_nav-bar_volunteer-3">Volunteer</a></li>
+<li id="menu-item-8232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8232"><a href="https://votesaveamerica.com/bans/" class="cc_sitewide_nav-bar_fck-bans">F*ck Bans</a></li>
+<li id="menu-item-8227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8227"><a href="https://votesaveamerica.com/about-us/" class="cc_sitewide_nav-bar_about-us">About Us</a></li>
+</ul>    </div><!-- .nav__bar-inner -->
+  </div><!-- .nav__bar -->
+
+  <div class="nav__overlay" id="nav__overlay">
+    <div class="nav__content">
+      <ul class="nav__stacklist nav__stacklist--large nav__stacklist--colored"><li id="menu-item-5384" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5384"><a href="https://votesaveamerica.com/be-a-voter/">Be A Voter</a></li>
+<li id="menu-item-7636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7636"><a href="https://votesaveamerica.com/donate/">Donate</a></li>
+<li id="menu-item-5769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5769"><a href="https://votesaveamerica.com/save-america/">Volunteer</a></li>
+<li id="menu-item-8233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8233"><a href="https://votesaveamerica.com/bans/">F*ck Bans</a></li>
+<li id="menu-item-8228" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8228"><a href="https://votesaveamerica.com/about-us/">About Us</a></li>
+</ul>
+      
+      <div class="nav__footer">
+        <ul class="nav__stacklist nav__stacklist--small"><li id="menu-item-6352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6352"><a href="https://votesaveamerica.com/subscribe/">Subscribe</a></li>
+<li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1049"><a href="https://votesaveamerica.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1048"><a href="https://votesaveamerica.com/privacy-policy/">Privacy Policy</a></li>
+<li class='menu-item'><button class='cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show'>Do Not Sell My Personal Information</button></li></ul>
+        <a href="#" class="nav__crooked-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="114" height="30" viewBox="0 0 114 30">
+    <g fill="#000">
+        <path d="M78.216 14.114c-.036-.107-.036-.224 0-.332L82.792.89c.074-.203.045-.43-.08-.607-.124-.177-.326-.282-.542-.281h-4.312c-.172 0-.325.11-.38.274l-4.04 11.965c-.007.018-.026.03-.045.026-.019-.003-.033-.02-.034-.039V.747c0-.412-.335-.746-.747-.746h-3.884c-.18 0-.354.072-.482.2-.127.128-.2.301-.199.482V28.39c0 .372.302.673.674.673h3.965c.372 0 .673-.301.673-.673V16.494c0-.02.016-.036.035-.04.02-.002.04.009.046.028l3.692 11.92c.123.395.49.665.904.665h4.103c.21 0 .408-.1.532-.27.124-.17.159-.39.094-.59l-4.55-14.093zM12.394 18.69H8.41c-.367 0-.664.296-.665.663v4.506c0 .168-.135.303-.303.303h-1.79c-.08 0-.158-.031-.215-.088-.058-.057-.09-.134-.09-.215V5.21c0-.08.032-.158.09-.215.057-.057.134-.089.215-.088h1.79c.168 0 .303.135.303.303v4.505c0 .367.298.663.665.663h3.947c.366 0 .663-.297.663-.663V4.896C13.02 1.923 11.16 0 8.273 0H4.819C1.848 0 0 1.878 0 4.893v19.282c0 3.015 1.848 4.888 4.819 4.888h3.454c2.952 0 4.784-1.873 4.784-4.888v-4.819c.001-.176-.068-.346-.193-.471-.124-.125-.294-.196-.47-.196zM30.608 28.34l-3.055-11.193c-.024-.093.019-.19.104-.235 1.427-.781 2.237-2.32 2.237-4.276v-7.78c0-2.953-1.878-4.855-4.787-4.855h-7.692c-.522 0-.945.423-.946.945v27.472c0 .354.287.641.64.643h4.03c.17 0 .333-.067.454-.188.12-.12.188-.283.188-.454V17.548c0-.054.044-.098.098-.099h.297c.044 0 .083.03.095.074l2.84 10.956c.089.344.4.584.755.584h4.184c.18.002.349-.08.459-.223.11-.141.146-.326.1-.5zm-6.026-17.699v1.753c0 .167-.135.303-.303.304h-2.195c-.166 0-.301-.135-.303-.302V5.133c0-.165.133-.3.298-.302h2.205c.166.003.298.138.298.303v5.507zM42.236 0h-3.965c-2.974 0-4.819 1.875-4.819 4.89v19.285c0 3.015 1.848 4.888 4.819 4.888h3.965c2.974 0 4.819-1.873 4.819-4.888V4.893C47.057 1.878 45.21.001 42.236.001zm-.526 22.103v1.754c0 .167-.137.303-.304.303H39.1c-.167 0-.303-.136-.303-.303V5.209c0-.166.133-.3.298-.303h2.316c.166.002.299.137.299.303v16.897-.003zM59.266 0h-3.964c-2.973 0-4.818 1.875-4.818 4.89v19.285c0 3.015 1.847 4.888 4.818 4.888h3.964c2.975 0 4.819-1.873 4.819-4.888V4.893C64.087 1.878 62.24.001 59.266.001zm-.526 22.103v1.754c0 .167-.136.303-.303.303H56.13c-.167 0-.303-.136-.303-.303V5.209c0-.166.133-.3.298-.303h2.316c.165.003.298.137.298.303v16.897-.003zM108.404 0H100.48c-.435 0-.787.354-.787.788v27.526c0 .412.333.746.745.747h7.967c2.975 0 4.819-1.873 4.819-4.889V4.893c.003-3.015-1.845-4.892-4.82-4.892zm-.526 22.103v1.754c0 .08-.032.158-.09.214-.056.057-.134.09-.214.089h-2.264c-.08 0-.158-.032-.215-.089-.057-.056-.09-.134-.09-.214V5.209c0-.166.133-.3.299-.303h2.282c.166.003.298.137.298.303v16.897l-.006-.003zM97.028 26.794V24.6c0-.167-.065-.326-.183-.444s-.278-.184-.444-.184h-5.422c-.167 0-.302-.136-.302-.303v-6.55c0-.167.135-.303.302-.305h4.685c.168.002.329-.063.448-.18.12-.118.186-.279.186-.446V12.353c0-.35-.284-.634-.634-.634H90.98c-.08 0-.158-.032-.215-.09-.057-.056-.089-.134-.088-.214V5.395c0-.167.135-.303.303-.304h5.09c.347-.004.626-.287.626-.634V.635c0-.347-.279-.63-.626-.634H86.11c-.412 0-.746.334-.746.747v27.566c0 .412.334.746.746.747h10.287c.167 0 .326-.066.444-.183.118-.118.184-.277.184-.444V26.794h.002z"/>
+    </g>
+</svg>
+        </a><!-- .nav__crooked-link -->
+        <p class="nav__copyright">&copy; Crooked Media 2023</p>
+      </div><!-- .nav__footer -->
+    </div><!-- .nav__content -->
+  </div><!-- .nav__overlay -->
+</nav><!-- .nav -->
+
+  <main class="main-content" id="MainContent" role="main">
+
+<div class="page-not-found" id="page-not-found">
+  <div class="page-not-found__inner">
+    <h1 class="page-not-found__headline">404 Page Not Found</h1>
+    <p class="page-not-found__copy">You shouldn't be here. You should probably be in Wisconsin...</p>
+    <div class="page-not-found__image-wrapper">
+      <div class="page-not-found__image-wrapper-inner">
+        <img src="https://votesaveamerica.com/wp-content/themes/vsa/images/wisconsin-state-cutout.png" alt="Wisconsin cutout with State bird" class="page-not-found__image">
+      </div>
+    </div>
+  </div>
+</div><!-- #page-not-found.page-not-found -->
+
+</main><!-- .main-content -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="footer__inner">
+      <ul class="footer__stacklist">
+                  <li class="footer__nav-item menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-6352">
+            <a class="footer__nav-link"  href="https://votesaveamerica.com/subscribe/">Subscribe</a>
+          </li>
+                  <li class="footer__nav-item menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1049">
+            <a class="footer__nav-link"  href="https://votesaveamerica.com/terms-of-service/">Terms of Service</a>
+          </li>
+                  <li class="footer__nav-item menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-1048">
+            <a class="footer__nav-link"  href="https://votesaveamerica.com/privacy-policy/">Privacy Policy</a>
+          </li>
+                          <li class='footer__nav-item menu-item'>
+            <button class='cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show'>
+              Do Not Sell My Personal Information
+            </button>
+          </li>
+              </ul>
+      <ul class="footer__social">
+                              <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--facebook icon-facebook" href="https://www.facebook.com/groups/votesaveamerica/" rel="noreferrer noopener" target="_blank">
+                                  <?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon / Social / Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2020-02-06" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer---Desktop" transform="translate(-560.000000, -509.000000)">
+            <g id="Group-4" transform="translate(560.000000, 509.000000)">
+                <g id="Icon-/-Social-/-Facebook">
+                    <path class="line" d="M6.38819446,6.38819446 C2.62939815,10.1469908 0.75,15.0734954 0.75,20 C0.75,24.9265046 2.62939815,29.8530092 6.38819446,33.6118055 C10.1469908,37.3706018 15.0734954,39.25 20,39.25 C24.9265046,39.25 29.8530092,37.3706018 33.6118055,33.6118055 C37.3706018,29.8530092 39.25,24.9265046 39.25,20 C39.25,15.0734954 37.3706018,10.1469908 33.6118055,6.38819446 C29.8530092,2.62939815 24.9265046,0.75 20,0.75 C15.0734954,0.75 10.1469908,2.62939815 6.38819446,6.38819446 Z" id="Oval" stroke-width="1.5"></path>
+                    <path class="icon" d="M21.1068649,27.3600008 L21.1068649,19.6791012 L23.3789059,19.6791012 L23.6800004,17.0322206 L21.1068649,17.0322206 L21.1107251,15.7074313 C21.1107251,15.0170841 21.1810127,14.6471803 22.2435288,14.6471803 L23.6639163,14.6471803 L23.6639163,12 L21.3915536,12 C18.6620806,12 17.7013769,13.2840219 17.7013769,15.4433428 L17.7013769,17.0325204 L16,17.0325204 L16,19.6794009 L17.7013769,19.6794009 L17.7013769,27.3600008 L21.1068649,27.3600008 Z" id="Oval-1" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                              </a>
+            </li>
+                      <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--twitter icon-twitter" href="https://twitter.com/votesaveamerica" rel="noreferrer noopener" target="_blank">
+                                  <?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon / Social / Twitter</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2020-02-06" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer---Desktop" transform="translate(-620.000000, -509.000000)">
+            <g id="Group-4" transform="translate(560.000000, 509.000000)">
+                <g id="Icon-/-Social-/-Twitter" transform="translate(60.000000, 0.000000)">
+                    <g id="Group-12">
+                        <path class="line" d="M6.38819446,6.38819446 C2.62939815,10.1469908 0.75,15.0734954 0.75,20 C0.75,24.9265046 2.62939815,29.8530092 6.38819446,33.6118055 C10.1469908,37.3706018 15.0734954,39.25 20,39.25 C24.9265046,39.25 29.8530092,37.3706018 33.6118055,33.6118055 C37.3706018,29.8530092 39.25,24.9265046 39.25,20 C39.25,15.0734954 37.3706018,10.1469908 33.6118055,6.38819446 C29.8530092,2.62939815 24.9265046,0.75 20,0.75 C15.0734954,0.75 10.1469908,2.62939815 6.38819446,6.38819446 Z" id="Oval" stroke-width="1.5"></path>
+                        <path class="icon" d="M20.2039726,16.6774007 L20.2405974,17.2753277 L19.6301828,17.2021121 C17.4082736,16.9214525 15.4671551,15.9696503 13.8190356,14.3711107 L13.0132883,13.5779423 L12.8057473,14.1636666 C12.3662488,15.469344 12.6470395,16.8482369 13.5626614,17.7756339 C14.0509931,18.2881428 13.9411185,18.3613584 13.0987463,18.0562936 C12.8057473,17.9586728 12.5493732,17.8854572 12.5249565,17.9220651 C12.4394985,18.0074832 12.7324975,19.1179191 12.9644551,19.5572124 C13.2818707,20.1673421 13.9289102,20.765269 14.6369911,21.1191442 L15.2351975,21.3998038 L14.5271165,21.4120064 C13.8434522,21.4120064 13.8190356,21.424209 13.8922854,21.6804634 C14.1364512,22.473632 15.1009063,23.3156108 16.1752361,23.6816886 L16.9321501,23.937943 L16.2729023,24.3284259 C15.296239,24.8897452 14.1486594,25.2070126 13.00108,25.2314178 C12.4517068,25.2436203 12,25.2924307 12,25.3290386 C12,25.4510644 13.4894117,26.1344096 14.3562005,26.4028666 C16.9565667,27.1960351 20.0452648,26.8543625 22.3648403,25.4998748 C24.0129598,24.53587 25.6610794,22.6200631 26.4302018,20.765269 C26.8452837,19.7768591 27.2603656,17.9708755 27.2603656,17.1044913 C27.2603656,16.5431722 27.2969905,16.4699566 27.9806548,15.798814 C28.3835285,15.408331 28.7619856,14.9812404 28.8352354,14.8592144 C28.9573183,14.6273652 28.9451101,14.6273652 28.3224871,14.8348092 C27.2847822,15.200887 27.1382827,15.1520766 27.651031,14.60296 C28.029488,14.212477 28.4811949,13.5047267 28.4811949,13.2972826 C28.4811949,13.2606748 28.2980705,13.3216878 28.0905295,13.4315111 C27.8707802,13.5535371 27.3824485,13.7365759 27.0161998,13.8463993 L26.356952,14.0538433 L25.7587456,13.6511577 C25.4291217,13.4315111 24.9652067,13.1874593 24.7210408,13.1142437 C24.0984179,12.9434074 23.1461711,12.9678126 22.5845895,13.1630541 C21.058553,13.7121708 20.0940979,15.1276715 20.2039726,16.6774007 C20.2039726,16.6774007 20.0940979,15.1276715 20.2039726,16.6774007 Z" id="Oval-1" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                              </a>
+            </li>
+                      <li class="footer__social__item">
+              <a class="footer__social__link footer__social__link--instagram icon-instagram" href="https://www.instagram.com/votesaveamerica/" rel="noreferrer noopener" target="_blank">
+                                  <?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Icon / Social / Instagram</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2020-02-06" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer---Desktop" transform="translate(-680.000000, -509.000000)">
+            <g id="Group-4" transform="translate(560.000000, 509.000000)">
+                <g id="Icon-/-Social-/-Instagram" transform="translate(120.000000, 0.000000)">
+                    <g id="Group-16">
+                        <path class="line" d="M6.38819446,6.38819446 C2.62939815,10.1469908 0.75,15.0734954 0.75,20 C0.75,24.9265046 2.62939815,29.8530092 6.38819446,33.6118055 C10.1469908,37.3706018 15.0734954,39.25 20,39.25 C24.9265046,39.25 29.8530092,37.3706018 33.6118055,33.6118055 C37.3706018,29.8530092 39.25,24.9265046 39.25,20 C39.25,15.0734954 37.3706018,10.1469908 33.6118055,6.38819446 C29.8530092,2.62939815 24.9265046,0.75 20,0.75 C15.0734954,0.75 10.1469908,2.62939815 6.38819446,6.38819446 Z" id="Oval" stroke-width="1.5"></path>
+                        <g class="icon" id="ig-logo" transform="translate(12.000000, 12.000000)" fill-rule="nonzero">
+                            <path d="M7.58964747,3.61411784 C5.39402309,3.61411784 3.61411784,5.39402309 3.61411784,7.58964747 C3.61411784,9.78527186 5.39402309,11.5651771 7.58964747,11.5651771 C9.78527186,11.5651771 11.5651771,9.78527186 11.5651771,7.58964747 C11.5651771,6.53527146 11.1463279,5.52407994 10.4007714,4.77852351 C9.655215,4.03296709 8.64402349,3.61411784 7.58964747,3.61411784 L7.58964747,3.61411784 Z M7.58964747,10.1719085 C6.1635041,10.1719085 5.00738646,9.01579085 5.00738646,7.58964747 C5.00738646,6.1635041 6.1635041,5.00738646 7.58964747,5.00738646 C9.01579085,5.00738646 10.1719085,6.1635041 10.1719085,7.58964747 C10.1719085,9.01579085 9.01579085,10.1719085 7.58964747,10.1719085 L7.58964747,10.1719085 Z" id="Shape"></path>
+                            <circle id="Oval" cx="11.9265889" cy="3.97552963" r="1.08423535"></circle>
+                            <path d="M15.4825092,2.73896672 C15.069294,1.67365252 14.2256351,0.831418192 13.1585189,0.418900792 C12.5403873,0.187220204 11.8873605,0.0619200296 11.22724,0.0483347067 C10.377262,0.0107410459 10.1082817,0 7.95105926,0 C5.79383682,0 5.51947686,0 4.67487855,0.0483347067 C4.01475802,0.0619200296 3.36173121,0.187220204 2.74359961,0.418900792 C1.67648346,0.831418192 0.832824515,1.67365252 0.419609352,2.73896672 C0.187536882,3.35605453 0.0620247658,4.00797862 0.0484164637,4.66698446 C0.0107592142,5.51552709 0,5.78405324 0,7.93763295 C0,10.0912127 0,10.3651093 0.0484164637,11.2082814 C0.0620247658,11.8672873 0.187536882,12.5192114 0.419609352,13.1362992 C0.832824515,14.2016134 1.67648346,15.0438477 2.74359961,15.4563651 C3.36012369,15.6972225 4.0132008,15.8316128 4.67487855,15.8537838 C5.52485647,15.8913775 5.79383682,15.9021185 7.95105926,15.9021185 C10.1082817,15.9021185 10.3826417,15.9021185 11.22724,15.8537838 C11.8873605,15.8401985 12.5403873,15.7148983 13.1585189,15.4832177 C14.2256351,15.0707003 15.069294,14.228466 15.4825092,13.1631518 C15.7145816,12.546064 15.8400938,11.8941399 15.8537021,11.2351341 C15.8913593,10.3865914 15.9021185,10.1180653 15.9021185,7.96448557 C15.9021185,5.81090585 15.9021185,5.53700918 15.8537021,4.69383708 C15.8431495,4.0257878 15.7175885,3.36452647 15.4825092,2.73896672 L15.4825092,2.73896672 Z M14.4065877,11.1438352 C14.401981,11.6518199 14.3091519,12.155158 14.1322278,12.63147 C13.864453,13.3250715 13.3153328,13.8732644 12.6205582,14.140587 C12.1485329,14.3153909 11.6499603,14.4080342 11.1465459,14.4144837 C10.3073272,14.4520773 10.0706244,14.4628184 7.91878162,14.4628184 C5.76693879,14.4628184 5.5463749,14.4628184 4.69101737,14.4144837 C4.18760297,14.4080342 3.68903037,14.3153909 3.21700503,14.140587 C2.51981339,13.8751092 1.96835768,13.3265369 1.69995584,12.63147 C1.52485624,12.1602418 1.43205623,11.6625111 1.42559588,11.1599467 C1.38793863,10.3221451 1.37717941,10.0858421 1.37717941,7.93763295 C1.37717941,5.78942376 1.37717941,5.56923232 1.42559588,4.71531917 C1.43020265,4.2073344 1.52303175,3.70399635 1.69995584,3.22768431 C1.96835768,2.53261743 2.51981339,1.98404513 3.21700503,1.71856735 C3.68903037,1.54376343 4.18760297,1.45112012 4.69101737,1.44467068 C5.53023607,1.40707702 5.76693879,1.39633597 7.91878162,1.39633597 C10.0706244,1.39633597 10.2911883,1.39633597 11.1465459,1.44467068 C11.6499603,1.45112012 12.1485329,1.54376343 12.6205582,1.71856735 C13.3153328,1.98588992 13.864453,2.53408288 14.1322278,3.22768431 C14.3073274,3.69891258 14.4001274,4.19664327 14.4065877,4.6992076 C14.444245,5.53700918 14.4550042,5.77331219 14.4550042,7.92152138 C14.4550042,10.0697306 14.4550042,10.3006631 14.417347,11.1438352 L14.4065877,11.1438352 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+                              </a>
+            </li>
+                        </ul>
+                  <p class="footer__copyright">&copy; Vote Save America 2023</p>
+              <p class="footer__legal">PAID FOR BY VOTE SAVE AMERICA. VOTESAVEAMERICA.COM. NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE’S COMMITTEE.</p>
+          </div><!-- .footer__inner -->
+  </footer><!-- .footer -->
+
+              <div class="footer__bar">
+                  <div class="footer__rainbow"></div><!-- .footer__rainbow -->
+              </div><!-- .footer__bar -->
+        
+<!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
+<div id="cmplz-cookiebanner-container"><div class="cmplz-cookiebanner cmplz-hidden banner-1 optout cmplz-bottom-right cmplz-categories-type-view-preferences" aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optout" aria-describedby="cmplz-message-1-optout">
+	<div class="cmplz-header">
+		<div class="cmplz-logo"></div>
+		<div class="cmplz-title" id="cmplz-header-1-optout">Manage Cookie Consent</div>
+		<div class="cmplz-close" tabindex="0" role="button" aria-label="close-dialog">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</div>
+	</div>
+
+	<div class="cmplz-divider cmplz-divider-header"></div>
+	<div class="cmplz-body">
+		<div class="cmplz-message" id="cmplz-message-1-optout"><span style="font-weight: 400"> We use cookies on our site to enable basic functionality, to provide a more relevant experience (such as by remembering your preferences), to analyze traffic on our site, and to serve personalized ads and/or content. By clicking “Accept,” you consent to the use of all cookies. You may also allow specific categories of cookies by clicking “View preferences.” You can also reject all non-necessary cookies by selecting “Deny.” If you reject the use of all non-necessary cookies, this may affect certain features and functions of the site.</span></div>
+		<!-- categories start -->
+		<div class="cmplz-categories">
+			<details class="cmplz-category cmplz-functional" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Necessary</span>
+							<span class='cmplz-always-active'>
+								<span class="cmplz-banner-checkbox">
+									<input type="checkbox"
+										   id="cmplz-functional-optout"
+										   data-category="cmplz_functional"
+										   class="cmplz-consent-checkbox cmplz-functional"
+										   size="40"
+										   value="1"/>
+									<label class="cmplz-label" for="cmplz-functional-optout" tabindex="0"><span class="screen-reader-text">Necessary</span></label>
+								</span>
+								Always active							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-functional">The use of necessary cookies is required for the site to function properly. These cookies enable basic functionality and security features of the site.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-preferences" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Preferences</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-preferences-optout"
+									   data-category="cmplz_preferences"
+									   class="cmplz-consent-checkbox cmplz-preferences"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-preferences-optout" tabindex="0"><span class="screen-reader-text">Preferences</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-preferences">These cookies enable the site to remember your preferences, such as your language or the region where you are located.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-statistics" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Analytics</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-statistics-optout"
+									   data-category="cmplz_statistics"
+									   class="cmplz-consent-checkbox cmplz-statistics"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-statistics-optout" tabindex="0"><span class="screen-reader-text">Analytics</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-statistics">The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.</span>
+					<span class="cmplz-description-statistics-anonymous">The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.</span>
+				</div>
+			</details>
+			<details class="cmplz-category cmplz-marketing" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Marketing</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-marketing-optout"
+									   data-category="cmplz_marketing"
+									   class="cmplz-consent-checkbox cmplz-marketing"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-marketing-optout" tabindex="0"><span class="screen-reader-text">Marketing</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-marketing">Marketing cookies are used to provide visitors with ads and marketing that we believe may be relevant to them. These cookies track visitors across websites and collect information to provide customized ads on other sites based on your visits to this site and other online activity.</span>
+				</div>
+			</details>
+		</div><!-- categories end -->
+			</div>
+
+	<div class="cmplz-links cmplz-information">
+		<a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Manage options</a>
+		<a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview">Manage services</a>
+		<a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper">Manage vendors</a>
+		<a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/">Read more about these purposes</a>
+			</div>
+
+	<div class="cmplz-divider cmplz-footer"></div>
+
+	<div class="cmplz-buttons">
+		<button class="cmplz-btn cmplz-accept">Accept</button>
+		<button class="cmplz-btn cmplz-deny">Deny</button>
+		<button class="cmplz-btn cmplz-view-preferences">View preferences</button>
+		<button class="cmplz-btn cmplz-save-preferences">Save preferences</button>
+		<a class="cmplz-btn cmplz-manage-options tcf cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">View preferences</a>
+			</div>
+
+	<div class="cmplz-links cmplz-documents">
+		<a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a>
+			</div>
+
+</div>
+</div>
+					<div id="cmplz-manage-consent" data-nosnippet="true"><button class="cmplz-btn cmplz-hidden cmplz-manage-consent manage-consent-1">Manage consent</button>
+
+</div><script type='text/javascript' id='cmplz-dnsmpd-js-extra'>
+/* <![CDATA[ */
+var cmplz_datarequests = {"url":"https:\/\/votesaveamerica.com\/wp-json\/complianz\/v1\/datarequests"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://votesaveamerica.com/wp-content/plugins/complianz-gdpr-premium/DNSMPD/script.min.js?ver=6.3.7.1' id='cmplz-dnsmpd-js'></script>
+<script type='text/javascript' src='https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261' id='main-js-js'></script>
+<script type='text/javascript' id='cmplz-cookiebanner-js-extra'>
+/* <![CDATA[ */
+var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_ajax_content":"0","banner_version":"23","version":"6.3.7.1","store_consent":"1","do_not_track":"","consenttype":"optout","region":"us","geoip":"1","dismiss_timeout":"","disable_cookiebanner":"","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https:\/\/votesaveamerica.com\/wp-json\/complianz\/v1\/","locale":"lang=en&locale=en_US","set_cookies_on_root":"0","cookie_domain":"","current_policy_id":"15","cookie_path":"\/","categories":{"statistics":"statistics","marketing":"marketing"},"tcf_active":"","placeholdertext":"<div class=\"cmplz-blocked-content-notice-body\">Click 'I agree' to enable {service}\u00a0<div class=\"cmplz-links\"><a href=\"#\" class=\"cmplz-link cookie-statement\">{title}<\/a><\/div><\/div><button class=\"cmplz-accept-service\">I agree<\/button>","css_file":"https:\/\/votesaveamerica.com\/wp-content\/uploads\/complianz\/css\/banner-{banner_id}-{type}.css?v=23","page_links":{"us":{"cookie-statement":{"title":"Privacy Policy","url":"https:\/\/votesaveamerica.com\/privacy-policy\/"},"privacy-statement":{"title":"Privacy Policy","url":"https:\/\/votesaveamerica.com\/privacy-policy\/"},"privacy-statement-children":{"title":"","url":false},"disclaimer":{"title":"Terms of Service","url":"https:\/\/votesaveamerica.com\/terms-of-service\/"}},"eu":{"disclaimer":{"title":"Terms of Service","url":"https:\/\/votesaveamerica.com\/terms-of-service\/"}},"uk":{"disclaimer":{"title":"Terms of Service","url":"https:\/\/votesaveamerica.com\/terms-of-service\/"}},"ca":{"disclaimer":{"title":"Terms of Service","url":"https:\/\/votesaveamerica.com\/terms-of-service\/"}},"au":{"disclaimer":{"title":"Terms of Service","url":"https:\/\/votesaveamerica.com\/terms-of-service\/"}},"za":{"disclaimer":{"title":"Terms of Service","url":"https:\/\/votesaveamerica.com\/terms-of-service\/"}},"br":{"disclaimer":{"title":"Terms of Service","url":"https:\/\/votesaveamerica.com\/terms-of-service\/"}}},"tm_categories":"1","forceEnableStats":"","preview":"","clean_cookies":"1"};
+/* ]]> */
+</script>
+<script defer type='text/javascript' src='https://votesaveamerica.com/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=6.3.7.1' id='cmplz-cookiebanner-js'></script>
+<!-- Statistics script Complianz GDPR/CCPA -->
+						<script data-category="functional">
+							window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {
+	'security_storage': "granted",
+	'functionality_storage': "granted",
+	'personalization_storage': "denied",
+	'analytics_storage': 'denied',
+	'ad_storage': "denied",
+});
+
+dataLayer.push({
+	'event': 'default_consent'
+});
+
+document.addEventListener("cmplz_fire_categories", function (e) {
+	function gtag(){
+		dataLayer.push(arguments);
+	}
+	var consentedCategories = e.detail.categories;
+	let preferences = 'denied';
+	let statistics = 'denied';
+	let marketing = 'denied';
+
+	if (cmplz_in_array( 'preferences', consentedCategories )) {
+		preferences = 'granted';
+	}
+
+	if (cmplz_in_array( 'statistics', consentedCategories )) {
+		statistics = 'granted';
+	}
+
+	if (cmplz_in_array( 'marketing', consentedCategories )) {
+		marketing = 'granted';
+	}
+
+	gtag('consent', 'update', {
+		'security_storage': "granted",
+		'functionality_storage': "granted",
+		'personalization_storage': preferences,
+		'analytics_storage': statistics,
+		'ad_storage': marketing,
+	});
+
+});
+
+document.addEventListener("cmplz_cookie_warning_loaded", function (e) {
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PQ55T4L');
+});
+
+document.addEventListener("cmplz_revoke", function (e) {
+	gtag('consent', 'update', {
+		'security_storage': "granted",
+		'functionality_storage': "granted",
+		'personalization_storage': "denied",
+		'analytics_storage': 'denied',
+		'ad_storage': "denied",
+	});
+});
+						</script>
+    <script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-5f0dced8b65558ec36e","applicationID":"231029016","transactionName":"YwBUbUUECEsDAEUKXlpKd1pDDAlWTVcBVw==","queueTime":0,"applicationTime":400,"atts":"T0dXGw0eG0U=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

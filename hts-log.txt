@@ -1,0 +1,25 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 26 Aug 2023 16:07:34 at https://votesaveamerica.com/candidate/donald-trump/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://votesaveamerica.com/candidate/donald-trump/ -O1 "C:\My Web Sites\jackv2" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:07:35	Warning: 	Moved Permanently for https://votesaveamerica.com/robots.txt
+16:07:35	Warning: 	File has moved from https://votesaveamerica.com/robots.txt to https://www.votesaveamerica.com/bans/?tab=fight-back-for-abortion-accessbots.txt
+16:07:49	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://votesaveamerica.com/candidate/donald-trump/)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/Trident/ (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/Edge/ (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/Gecko/ (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/Firefox/ (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/Version/ (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/version/ (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/; path=/ (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/document.location (from https://votesaveamerica.com/wp-content/themes/vsa/compiled/js/app.js?ver=1693066261)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/+src+ (from https://votesaveamerica.com/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=6.3.7.1)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/window.location.href (from https://votesaveamerica.com/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=6.3.7.1)
+16:07:49	Error: 	"Not Found" (404) at link https://votesaveamerica.com/candidate/donald-trump/POST (from https://votesaveamerica.com/wp-content/plugins/complianz-gdpr-premium/cookiebanner/js/complianz.min.js?ver=6.3.7.1)
+
+HTTrack Website Copier/3.49-2 mirror complete in 15 seconds : 34 links scanned, 21 files written (2082470 bytes overall) [1003521 bytes received at 66901 bytes/sec], 2989717 bytes transferred using HTTP compression in 21 files, ratio 29%, 2.7 requests per connection
+(12 errors, 2 warnings, 0 messages)
